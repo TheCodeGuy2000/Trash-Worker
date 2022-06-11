@@ -1,0 +1,278 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo de la pagina */
+
+
+	
+body{
+	font-family: 'sans-serif';
+	margin: 0;
+	
+}
+
+/* Links configuracion */
+
+a{
+	text-decoration: none;
+	color: white;
+	
+}
+	
+.link {
+	text-decoration: none;
+	color: blueSS;
+}
+	
+/* Encabezado de la pagina */
+
+header {
+	display: flex;
+	height: 70px;
+	background-color: green;
+    justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 90px;
+	margin-right: 10px;
+}
+
+nav a{
+	font-weight: 600;
+	padding-right: 10px;
+	position: sticky;
+	top: 0;
+	transition: .3s ease-out all;
+}
+
+nav a:hover{
+	color: black;
+}
+
+@media (max-widht: 700px) {
+	header {
+		flex-direction: column;
+	}
+}
+
+/* Para titulos */
+
+h1 {
+	color:green;
+	font-size: 50px;
+	font-family: 'Arial';
+	text-align: center;
+}
+
+/* Para subtitulos */
+
+h2 {
+	color:green;
+	font-family: 'sans-serif';
+	font-size: 30px;
+	text-align: center;
+}
+
+/* Para el contenido */
+
+h3 {
+	color: black;
+	font-family: 'sans-serif';
+	font-size: 20px;
+	justify-align: center;
+}
+
+/* Imagen ilustrativa */
+
+.contenedor-imagen {
+	height: 100vh;
+}
+
+.contenedor-imagen img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+}
+
+/* Formato imagenes */
+
+div {
+	whidth: 500px;
+}
+
+img {
+	display: auto;
+	border-radius: 10px;
+}
+
+/* Aside */
+
+aside {
+	min-width: 30%;
+	margin: 40px 20px 20px 0;
+	height: 100%;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+aside .titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #f2f2f2;
+}
+
+/* Formato listas */
+
+ ul {
+	 list-style-type: none;
+	/* list-style-image: url('fondo/Lata.png'); */
+ }
+ 
+ li::before {
+	 content:'';
+	 display: inline-block;
+	 width: 25px;
+	 height: 25px;
+	 background-image: url('fondo/Lata.png');
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size: cover;
+	 margin-right: 5px;
+ }
+
+/* Formulario y diseño del boton */
+
+.form {
+	background-color: #1FEF0A;
+	border-radius: 3px;
+	font-size: 1.2em;
+	font-family: 'sant serif';
+	padding: 10px;
+	margin: 0 auto;
+	width: 300px;
+}
+
+.field {
+	border: solid 1px #ccc;
+	padding: 10px;
+	width: 250px;
+}
+
+.btn {
+   border-radius: 3px;
+   display: inline-block;
+   padding: 20px 15px;
+   text-decoration: none;
+   text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+   box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.center-content{
+	text-align:center;
+}
+
+/* Formato de tabla */
+/*No eh dormido, ayudenme */
+
+#main-container {
+	margin: 150px auto;
+	width: 600px;
+}
+
+table {
+	background-color: white;
+	text-align: center;
+	width: 50%;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+th, td {
+	padding: 10px;
+}
+
+thead {
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: #ddd;
+}
+
+tr:hover td {
+	background-color: #369681;
+    color:white;
+}
+
+/* Tarjetas informativas */
+
+.container2 {
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+}
+
+.card {
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	cursor: default;
+	transition: all 0.25s;
+}
+
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.card img {
+	width: 100%;
+	height: 210px;
+}
+
+.card .contenido {
+	padding: 15px;
+	text-align: center;
+}
+
+.card .contenido h3 {
+	line-height: 1.5;
+	color: blue;
+}
+
+/* Pie de pagina */
+
+footer {
+	maw-width: 1000px;
+	min-height: 130px;
+	background: green;
+	margin: 0 auto;
+	border-radius: 0 0 20px 20px;
+}
